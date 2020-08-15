@@ -5,7 +5,7 @@
   </a>
 </p>
 
-Recode some learning Swift, iOS and the other technology notes.
+Wrote some learning Swift, iOS and the other technology notes.
 
 Feel free to give your comments, Your comments and suggestions are welcome!
 At your convenience, send the `Issue` to discuss together.
