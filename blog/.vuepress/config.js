@@ -121,7 +121,7 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#paginationcomponent
      */
 
-    paginationComponent: 'SimplePagination'
+    paginationComponent: 'SimplePagination',
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
