@@ -2,6 +2,16 @@ module.exports = {
   title: "Andrew's Blog",
   description: 'Learning Swift!',
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-175488874-1'
+      }
+    ]
+  ],
+  
   themeConfig: {
     dateFormat: 'YYYY-MM-DD',
 
