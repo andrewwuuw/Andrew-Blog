@@ -1,46 +1,35 @@
 module.exports = {
-  title: 'VuePress Blog Example',
-  description: 'A blog powered by VuePress',
+  title: "Andrew's Blog",
+  description: 'Learning Swift!',
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
   themeConfig: {
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
-     */
+    dateFormat: 'YYYY-MM-DD',
 
-    // dateFormat: 'YYYY-MM-DD',
+    nav: [
+      {
+        text: 'Blog',
+        link: '/',
+      },
+      {
+        text: 'Tags',
+        link: '/tag/',
+      },
+    ],
 
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
-     */
-
-    // nav: [
-    //   {
-    //     text: 'Blog',
-    //     link: '/',
-    //   },
-    //   {
-    //     text: 'Tags',
-    //     link: '/tag/',
-    //   },
-    // ],
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
-     */
     footer: {
       contact: [
         {
           type: "github",
-          link: "https://github.com/newsbielt703"
+          link: "https://github.com/andrewwuuw"
         },
         {
           type: "mail",
-          link: "mailto:newsbielt703@gmail.com"
+          link: "mailto:secret8419@gmail.com"
         }
       ],
       copyright: [
         {
-          text: "Billy Chin © 2020",
+          text: "Andrew Wu © 2020",
           link: ""
         }
       ]
@@ -81,30 +70,18 @@ module.exports = {
     //   },
     // ],
 
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination
-     */
+    globalPagination: {
+      lengthPerPage: 10,
+    },
 
-    // globalPagination: {
-    //   lengthPerPage: 10,
-    // },
+    sitemap: {
+      hostname: 'https://andrewwupp.site/'
+    },
 
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#sitemap
-     */
-
-    // sitemap: {
-    //   hostname: 'https://example.vuepress-theme-blog.ulivz.com/'
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#comment
-     */
-
-    // comment: {
-    //   service: 'disqus',
-    //   shortname: 'vuepress-plugin-blog',
-    // },
+    comment: {
+      service: 'disqus',
+      shortname: "Andrew's Blog",
+    },
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#newsletter
@@ -118,9 +95,9 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
      */
 
-    // feed: {
-    //   canonical_base: 'https://example.vuepress-theme-blog.ulivz.com/',
-    // },
+    feed: {
+      canonical_base: 'https://andrewwupp.site/',
+    },
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
@@ -144,12 +121,12 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#paginationcomponent
      */
 
-    // paginationComponent: 'SimplePagination'
+    paginationComponent: 'SimplePagination'
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
      */
 
-    // smoothScroll: true
+    smoothScroll: true
   },
 }
