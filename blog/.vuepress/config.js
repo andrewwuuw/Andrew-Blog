@@ -80,7 +80,7 @@ module.exports = {
 
     comment: {
       service: 'disqus',
-      shortname: "Andrew's Blog",
+      shortname: 'andrewwuuw-blog',
     },
 
     /**
