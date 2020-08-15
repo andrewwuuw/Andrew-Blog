@@ -22,11 +22,7 @@ module.exports = {
         id: "article",
         dirname: "_article",
         path: "/article/",
-        itemLayout: "Post",
-        itemPermalink: "/article/:year/:month/:day/:slug",
-        pagination: {
-          lengthPerPage: 10
-        }
+        itemPermalink: "/article/:slug",
       }
     ],
 
