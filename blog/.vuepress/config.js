@@ -1,6 +1,8 @@
 module.exports = {
   title: "Andrew's Blog",
+  
   description: 'Learning Swift!',
+
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
 
   plugins: [
@@ -15,10 +17,23 @@ module.exports = {
   themeConfig: {
     dateFormat: 'YYYY-MM-DD',
 
+    directories: [
+      {
+        id: "article",
+        dirname: "_article",
+        path: "/article/",
+        itemLayout: "Post",
+        itemPermalink: "/article/:year/:month/:day/:slug",
+        pagination: {
+          lengthPerPage: 10
+        }
+      }
+    ],
+
     nav: [
       {
-        text: 'Blog',
-        link: '/',
+        text: 'Article',
+        link: '/article/',
       },
       {
         text: 'Tags',
@@ -44,41 +59,6 @@ module.exports = {
         }
       ]
     },
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
-     */
-
-    // directories:[
-    //   {
-    //     id: 'post',
-    //     dirname: '_posts',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    //   {
-    //     id: 'writing',
-    //     dirname: '_writings',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    // ],
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
-     */
-
-    // frontmatters: [
-    //   {
-    //     id: "tag",
-    //     keys: ['tags'],
-    //     path: '/tag/',
-    //   },
-    //   {
-    //     id: "location",
-    //     keys: ['location'],
-    //     path: '/location/',
-    //   },
-    // ],
 
     globalPagination: {
       lengthPerPage: 10,
@@ -93,49 +73,11 @@ module.exports = {
       shortname: 'andrewwuuw-blog',
     },
 
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#newsletter
-     */
-
-    // newsletter: {
-    //   endpoint: 'https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138'
-    // },
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
-     */
-
     feed: {
       canonical_base: 'https://andrewwupp.site/',
     },
 
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
-     */
-
-    // summary:false,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summarylength
-     */
-
-    // summaryLength:100,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#pwa
-     */
-
-    // pwa:true,
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#paginationcomponent
-     */
-
     paginationComponent: 'SimplePagination',
-
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
-     */
 
     smoothScroll: true
   },
