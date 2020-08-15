@@ -1,32 +1,13 @@
-<h1 align="center">Welcome to vuepress-blog-template 👋</h1>
+<h1 align="center">Here is Andrew's Blog 👋</h1>
 <p>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
 
-> VuePress default blog theme template for quick start
+Recode some learning Swift, iOS and the other technology notes.
 
-## Install
+Feel free to give your comments, Your comments and suggestions are welcome!
+At your convenience, send the `Issue` to discuss together.
 
-```sh
-yarn install
-```
-
-## Usage
-
-```sh
-yarn dev   # development
-yarn build # production
-```
-
-## Author
-
-👤 **Billyyyyy3320**
-
-- Website: [billyyyyy3320.com](https://billyyyyy3320.com)
-- Github: [@newsbielt703](https://github.com/newsbielt703)
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+> Powered by [vuepress-theme-blog](https://github.com/vuepressjs/vuepress-theme-blog)
