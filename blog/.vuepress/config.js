@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
   title: "Andrew's Blog",
   
@@ -77,4 +78,7 @@ module.exports = {
 
     smoothScroll: true
   },
+  alias: {
+    "@assets": path.resolve(__dirname, "../assets")
+  }
 }

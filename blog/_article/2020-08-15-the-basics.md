@@ -1,5 +1,5 @@
 ---
-title: "[一起來看 Swift 官方文件] - 基礎篇"
+title: "[一起來看 Swift 官方文件] - 基礎篇 ( The Basics )"
 date: 2020-08-10
 tags:
     - iOS
@@ -7,6 +7,8 @@ tags:
     - Swift-book
 summary: Swift 基礎篇。
 ---
+
+![[一起來看 Swift 官方文件] - 基礎篇 ( The Basics )](@assets/20200815/banner.jpg "[一起來看 Swift 官方文件] - 基礎篇 ( The Basics )")
 
 # 基礎
 
