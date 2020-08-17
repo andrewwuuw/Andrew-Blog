@@ -14,7 +14,7 @@ summary: Swift Optionals。
 
 ---
 
-在[基礎篇](https://andrewwupp.site/article/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
+在[基礎篇](https://andrewwuu.com/article/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
 
 先來看一個字串轉整數的例子：
 
@@ -22,7 +22,7 @@ summary: Swift Optionals。
 let phoneNumber = "7533967"
 let intPhoneNumber = Int(phoneNumber)
 
-// intPhoneNumber 是一個 **Int?** 型別, Why?
+// intPhoneNumber 是一個 Int? 型別, Why?
 ```
 
 為什麼型別推論出來會是**可選整數型別**，原因就是字串中可能夾雜著非數字的文字，在 Int 初始化時有可能會失敗。
@@ -33,7 +33,7 @@ let intPhoneNumber = Int(phoneNumber)
 print(intPhoneNumber)  // 會印出 nil
 ```
 
-來看一下為什麼會印出 nil，在 Int 源碼裡可以發現，底下有一個 **Initialization**，原來就是透過這個 **Initialization** 來新增一個新的整數數值。
+來看一下為什麼會印出 nil，在 Int 官方 API 說明中可以發現，底下有一個 **Initialization**，原來就是透過這個 **Initialization** 來新增一個新的整數數值。
 
 ```swift
 @inlinable public init?<S>(_ text: S, radix: Int = 10) where S : StringProtocol
@@ -64,7 +64,7 @@ var 樂透中獎人姓名: String?
 
 ```swift
 樂透中獎人姓名 = "宜蘭人安竹"  // 我就知道我會中樂透
-樂透中獎人姓名 = nil  // ~~醒醒吧你根本不會中樂透~~
+樂透中獎人姓名 = nil  // 醒醒吧你根本不會中樂透
 ```
 
 這邊要注意的是，nil 只能指派給 Optional 型別的變數或常數，如果只派給非 Optional 變數或是常數，就會跳出錯誤訊息。
@@ -87,7 +87,7 @@ var 勁辣雞腿堡: String? = "勁辣雞腿堡"
 print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'String?' must be unwrapped to a value of type 'String'
 ```
 
-從上面例子可以得知~~**今晚沒得吃了**~~你正在使用的是 Optional String，你必須得確認這個變數是否有值，我們可以透過接下來的方式來檢查。
+從上面例子可以得知~~今晚沒得吃了~~你正在使用的是 Optional String，你必須得確認這個變數是否有值，我們可以透過接下來的方式來檢查。
 
 - 在使用 Optional 前先檢查是否為 nil，並且在 Optional 後方加上 `!`
 
@@ -134,7 +134,7 @@ print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'Str
     var 勁辣雞腿堡: String? = "勁辣雞腿堡"
     if var 宵夜 = 勁辣雞腿堡 {
     	宵夜 = "黃金起士炸雞"
-    	print("今晚，我想來點" + 宵夜) // 這時候宵夜就已經被替換成**黃金起士炸雞**
+    	print("今晚，我想來點" + 宵夜) // 這時候宵夜就已經被替換成 黃金起士炸雞
     } else {
     	print("剛好可以減肥")
     }
@@ -149,7 +149,7 @@ print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'Str
     	print("今晚，我想來點 \(第一份宵夜) 以及 \(第二份宵夜)")
     }
 
-    // 印出 **今晚，我想來點 勁辣雞腿堡 以及 黃金起士炸雞**
+    // 印出 > 今晚，我想來點 勁辣雞腿堡 以及 黃金起士炸雞
     ```
 
     這麼做看似一切都很美好，但有個小小缺點就是宣告的變數或常數只能在 if 判斷式中使用，出了判斷式，這些變數和常數都沒辦法使用了，後面會介紹 **guard statement**，就可以解決這個問題了。
@@ -160,7 +160,7 @@ print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'Str
 
 用問號來表達變數或是常數有值又有可能無值，這種表示方法很直覺又清楚，所以在呼叫的時候用驚嘆號來強制解開取值，也是很合理。
 
-但是這樣每呼叫一次就得加一次驚嘆號，其實蠻累的，所以 Swift 提供了一種方式叫做 I**mplicitly Unwrapped Optional**，簡單來說就是是「暗中地解開 Optional」，可以在一開始宣告 Optional 時，在型別後方加上 `!` ，開宗明義就篤定這個 Optional 一定有值，呼叫的時候就無需加上驚嘆號了。
+但是這樣每呼叫一次就得加一次驚嘆號，其實蠻累的，所以 Swift 提供了一種方式叫做 I**mplicitly Unwrapped Optional**，簡單來說就是是「**暗中地解開 Optional**」，可以在一開始宣告 Optional 時，在型別後方加上 `!` ，開宗明義就篤定這個 Optional 一定有值，呼叫的時候就無需加上驚嘆號了。
 
 ![mind-blown](@assets/20200816/mind-blown.gif)
 
