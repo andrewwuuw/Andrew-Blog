@@ -7,7 +7,7 @@ tags:
 summary: 快速了解 Static function, Class Function 以及 Global Function。
 ---
 
-# 型別方法 ( Type Method )
+## 型別方法 ( Type Method )
 
 - Static functions
 - Class functions
@@ -16,7 +16,7 @@ summary: 快速了解 Static function, Class Function 以及 Global Function。
 
 ---
 
-## Static Functions
+### Static Functions
 
 ```swift
 class 食死人 {
@@ -26,7 +26,7 @@ class 食死人 {
 }
 ```
 
-可以使用  `Bird.fly()` 呼叫，但是如果是先實作 Bird 類別，再去呼叫，就會出現警告標語。
+可以使用  `食死人.阿瓦達索命咒()` 呼叫，但是如果是先實作**食死人**類別然後呼叫，就會出現警告標語。
 
 ```swift
 食死人.阿瓦達索命咒()
@@ -52,7 +52,7 @@ class 貝拉・雷斯壯: 食死人 {
 
 ---
 
-## Class Functions
+### Class Functions
 
 ```swift
 class 食死人 {
