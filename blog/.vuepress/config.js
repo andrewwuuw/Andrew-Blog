@@ -79,7 +79,6 @@ module.exports = {
     smoothScroll: true
   },
   alias: {
-    "@assets": path.resolve(__dirname, "../assets"),
-    "@homeIndex": "https://andrewwuu.com"
+    "@assets": path.resolve(__dirname, "../assets")
   }
 }
