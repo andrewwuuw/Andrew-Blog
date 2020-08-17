@@ -25,16 +25,16 @@ Swift 也提供了 8、16、32 以及 64 位元的整數型別，命名規則也
 
 ### 整數的範圍 ( Integer Bounds )
 
-以**無符號整數**來說，可以從 `Swift > Math > Intergers` 源碼來看，有一個 **UnsignedInteger** 的協定，並且在下方擴展了 **UnsignedInteger** ，在裡面宣告兩個靜態變數 max 和 min，這樣一來可以藉由這兩個屬性來取得最大值以及最小值。
+以**無符號整數**來說，可以從官方 API `Swift > Math > Intergers` 來看，有一個 **UnsignedInteger** 的協定，並且擴展了 **UnsignedInteger** ，在裡面宣告兩個靜態變數 max 和 min，這樣一來可以藉由這兩個屬性來取得最大值以及最小值。
 
 ```swift
 public protocol UnsignedInteger : BinaryInteger {
 }
 
 extension UnsignedInteger where Self : FixedWidthInteger {
-		// ... 略 ...
-	
-		/// The maximum representable integer in this type.
+    // ... 略 ...
+
+    /// The maximum representable integer in this type.
     ///
     /// For unsigned integer types, this value is `(2 ** bitWidth) - 1`, where
     /// `**` is exponentiation.
@@ -63,9 +63,9 @@ public protocol SignedInteger : BinaryInteger, SignedNumeric {
 }
 
 extension SignedInteger where Self : FixedWidthInteger {
-		// ... 略 ...
-		
-		/// The maximum representable integer in this type.
+    // ... 略 ...
+
+    /// The maximum representable integer in this type.
     ///
     /// For signed integer types, this value is `(2 ** (bitWidth - 1)) - 1`,
     /// where `**` is exponentiation.
@@ -100,7 +100,7 @@ extension SignedInteger where Self : FixedWidthInteger {
 
 顧名思義，兩個的差異就差在精確度， Float 可表示 6 位數，但是 Double 至少可以表示 15 位數。
 
-還記得[上一篇](https://andrewwupp.site/article/the-basics/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
+還記得[上一篇](@homeIndex/article/the-basics/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
 
 ```swift
 let bmi = 23.79 // Type is Double.
