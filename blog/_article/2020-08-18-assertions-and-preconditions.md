@@ -1,5 +1,5 @@
 ---
-title: "[一起來看 Swift 官方文件] - 基礎番外篇 ( Assertions and Preconditions )"
+title: "[一起來看 Swift 官方文件] - 基礎番外篇 ( Assertions 與 Preconditions )"
 date: 2020-08-18
 tags:
     - iOS
