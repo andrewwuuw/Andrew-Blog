@@ -62,7 +62,7 @@ module.exports = {
     },
 
     sitemap: {
-      hostname: 'https://andrewwupp.site/'
+      hostname: 'https://andrewwuu.com/'
     },
 
     comment: {
@@ -71,7 +71,7 @@ module.exports = {
     },
 
     feed: {
-      canonical_base: 'https://andrewwupp.site/',
+      canonical_base: 'https://andrewwuu.com/',
     },
 
     paginationComponent: 'SimplePagination',
