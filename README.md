@@ -8,6 +8,7 @@
 Wrote some learning Swift, iOS and the other technology notes.
 
 Feel free to give your comments, Your comments and suggestions are welcome!
-At your convenience, send the `Issue` to discuss together.
+
+At your convenience, send the [Issue](https://github.com/andrewwuuw/Andrew-Blog/issues) to discuss together.
 
 > Powered by [vuepress-theme-blog](https://github.com/vuepressjs/vuepress-theme-blog)
