@@ -88,7 +88,7 @@ module.exports = {
 
     feed: {
       canonical_base: 'https://andrewwuu.com/',
-      posts_directories: ['/article/']
+      posts_directories: ['/_article/']
     },
 
     paginationComponent: 'SimplePagination',
