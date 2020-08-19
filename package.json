@@ -1,19 +1,20 @@
 {
   "name": "Andrew-Blog",
   "version": "1.0.0",
-  "description": "A blog powered by VuePress",
+  "description": "Wrote some learning Swift, iOS and the other technology notes.",
   "authors": {
     "name": "andrewwuuw",
     "email": "secret8419@gmail.com"
   },
   "scripts": {
-    "dev": "vuepress dev blog",
+    "dev": "vuepress dev blog --open --no-clear-screen",
     "build": "vuepress build blog"
   },
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.5.3",
     "@vuepress/theme-blog": "^2.3.1",
-    "vuepress": "^1.0.0"
+    "vuepress": "^1.0.0",
+    "vuepress-plugin-seo": "^0.1.4"
   }
 }

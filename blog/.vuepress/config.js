@@ -23,7 +23,7 @@ module.exports = {
         id: "article",
         dirname: "_article",
         path: "/article/",
-        itemPermalink: "/article/:slug",
+        itemPermalink: "/article/:year/:month/:day/:slug",
       }
     ],
 
@@ -72,6 +72,7 @@ module.exports = {
 
     feed: {
       canonical_base: 'https://andrewwuu.com/',
+      posts_directories: ['/article/']
     },
 
     paginationComponent: 'SimplePagination',
