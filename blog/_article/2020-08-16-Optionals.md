@@ -1,5 +1,5 @@
 ---
-title: "[一起來看 Swift 官方文件] - Optionals"
+title: "Learning Swift - Optionals"
 date: 2020-08-16
 tags:
     - iOS
@@ -8,7 +8,7 @@ tags:
 summary: Swift Optionals。
 ---
 
-![[一起來看 Swift 官方文件] - Optionals](@assets/20200816/banner2.jpg)
+![Learning Swift - Optionals](@assets/20200816/banner2.jpg "Learning Swift - Optionals")
 
 # Optionals
 
@@ -41,11 +41,11 @@ print(intPhoneNumber)  // 會印出 nil
 
 仔細來看一下這個 **Initialization** 的說明：
 
-![Int Initialization](@assets/20200816/init.png)
+![Int Initialization](@assets/20200816/init.png "Swift Int initialization")
 
 可以看到源碼清楚了說明可以被成功轉換的字串規則，他會去依照帶入的 text 以及 radix ( 進制 ) 做轉換。
 
-![soga](@assets/20200816/soga.gif)
+![soga](@assets/20200816/soga.gif "soga")
 
 以我們上方的例子，我們沒設定 radix 所以預設是 10 進制，**phoneNumber** 又存在著非數字的文字時，回傳的結果就是 **nil**，也因此 **intPhoneNumber** 會被推論為可選的整數型別。
 
@@ -126,7 +126,7 @@ print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'Str
     - 如果勁辣雞腿堡有值 ( **勁辣雞腿堡** )，就把值指派給**宵夜**常數，可以直接使用，不需要再加上 `!`，就會印出 `"今晚，我想來點勁辣雞腿堡"`
     - 如果勁辣雞腿堡沒有值，等同於 if 判斷不成立，印出 `"剛好可以減肥"`
 
-        ![cry](@assets/20200816/cry.gif)
+        ![cry](@assets/20200816/cry.gif "Swift optional error")
 
     如果想在 if 判斷成立時，修改**宵夜**的值，可以用 `if var` 宣告為變數
 
@@ -160,9 +160,9 @@ print("今晚，我想來點" + 勁辣雞腿堡)  // Value of optional type 'Str
 
 用問號來表達變數或是常數有值又有可能無值，這種表示方法很直覺又清楚，所以在呼叫的時候用驚嘆號來強制解開取值，也是很合理。
 
-但是這樣每呼叫一次就得加一次驚嘆號，其實蠻累的，所以 Swift 提供了一種方式叫做 I**mplicitly Unwrapped Optional**，簡單來說就是是「**暗中地解開 Optional**」，可以在一開始宣告 Optional 時，在型別後方加上 `!` ，開宗明義就篤定這個 Optional 一定有值，呼叫的時候就無需加上驚嘆號了。
+但是這樣每呼叫一次就得加一次驚嘆號，其實蠻累的，所以 Swift 提供了一種方式叫做 **Implicitly Unwrapped Optional**，簡單來說就是是「**暗中地解開 Optional**」，可以在一開始宣告 Optional 時，在型別後方加上 `!` ，開宗明義就篤定這個 Optional 一定有值，呼叫的時候就無需加上驚嘆號了。
 
-![mind-blown](@assets/20200816/mind-blown.gif)
+![mind-blown](@assets/20200816/mind-blown.gif "mplicitly Unwrapped Optional")
 
 ```swift
 var 勁辣雞腿堡: String! = "勁辣雞腿堡"

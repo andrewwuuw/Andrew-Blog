@@ -1,14 +1,14 @@
 ---
-title: "[一起來看 Swift 官方文件] - 基本型別 ( Basic Types )"
+title: "Learning Swift - Basic Types"
 date: 2020-08-16
 tags:
     - iOS
     - Swift
     - Swift-book
-summary: Swift 基本型別、Swift basic types。
+summary: Swift 基本型別
 ---
 
-![[一起來看 Swift 官方文件] - 基本型別 ( Basic Types )](@assets/20200816/banner.jpg "[一起來看 Swift 官方文件] - 基本型別 ( Basic Types )")
+![Swift Basic Types](@assets/20200816/banner.jpg "Swift Basic Types")
 
 # 基本型別
 
@@ -141,7 +141,7 @@ let pi = Double(three) + pointOneFourOneFiveNine
 
 但是在浮點數那個段落裡，為什麼可以不用轉換型別就可以將 3 跟 0.14159 相加？
 
-![型別轉換 為什麼可以不用轉換型別就可以將 3 跟 0.14159 相加？](@assets/20200816/monkey-shock.gif "為什麼可以不用轉換型別就可以將 3 跟 0.14159 相加？")
+![Swift conversion](@assets/20200816/monkey-shock.gif "Swift conversion")
 
 因為數字變數或常數的運算與數字文字的運算規則不同，因為數字文字本身沒有明顯標註型別，只有在編譯的時候才會透過型別推論推斷出它的型別，因此已經宣告的變數或常數必須得透過型別轉換才能執行運算。
 

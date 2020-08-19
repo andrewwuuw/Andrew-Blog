@@ -1,14 +1,16 @@
 ---
-title: "[一起來看 Swift 官方文件] - 基礎番外篇 ( Assertions 與 Preconditions )"
+title: "Learning Swift - Assertions and Preconditions"
 date: 2020-08-18
 tags:
     - iOS
     - Swift
     - Swift-book
 summary: Swift assertions, preconditions and fatalError。
+prev: ./2020-08-16-Optionals.md
+next: false
 ---
 
-![[一起來看 Swift 官方文件] - 基礎番外篇 ( Assertions and Preconditions ) - banner](@assets/20200818/banner.jpg)
+![Learning Swift - Assertions and Preconditions](@assets/20200818/banner.jpg "Learning Swift - Assertions and Preconditions")
 
 ## Assertions and Preconditions
 
@@ -41,7 +43,7 @@ assert(國文分數 > 0)
 // Assertion failed: file ..., line 2
 ```
 
-![assertion failed](@assets/20200818/chinese_score.png)
+![assertion failed](@assets/20200818/chinese_score.png "Swift assertion failed")
 
 在 Xcode 中就會跳出錯誤訊息，並且跟你說程序已被中斷，並且在 Output 印出 `Assertion failed`，還提醒你錯在第幾行，貼心 <3。
 
@@ -81,11 +83,11 @@ public func precondition(_ condition: @autoclosure () -> Bool,
 
 但是這樣跟 assertions 到底有什麼差別呢？差別就在於 assertions 只會在 Debug 環境下被編譯執行，在 Release 則不會，可以簡單開個 Xcode Project
 
-![但是這樣跟 assertions 到底有什麼差別呢？](@assets/20200818/rubbing_eyes.gif)
+![Swift assertions](@assets/20200818/rubbing_eyes.gif "Swift assertions")
 
 - 點選 `*.xcodeproject`檔案 > Build Setting > Apple Clang - Code Generation > Optimization Level
 
-![Optimization Level](@assets/20200818/OL.png)
+![Optimization Level](@assets/20200818/OL.png "Optimization Level")
 
 我們可以看到：
 
@@ -100,7 +102,7 @@ public func precondition(_ condition: @autoclosure () -> Bool,
 
 中文意思又叫做**致命錯誤**，聽起來有點中二，但確實是蠻危險的。
 
-![fatalError](@assets/20200818/dangerous.gif)
+![fatalError](@assets/20200818/dangerous.gif "fatalError")
 
 無論在什麼等級下都不會被優化，所以在任何環境都會執行，所以在使用的時候盡量避免，除非很明確的知道判斷結果為否的嚴重性跟 FatalError 是差不多的，再去使用，官方 API 是建議可以這麼做：
 

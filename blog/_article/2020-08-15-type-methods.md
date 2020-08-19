@@ -1,10 +1,12 @@
 ---
-title: 型別方法
+title: Type Methods
 date: 2020-08-07
 tags:
     - iOS
     - Swift
 summary: 快速了解 Static function, Class Function 以及 Global Function。
+prev: true
+next: true
 ---
 
 ## 型別方法 ( Type Method )
