@@ -3,6 +3,9 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://app.netlify.com/sites/andrewopp/deploys" target="_blank">
+    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/2b64d110-c11a-4777-b21d-93da4dc53396/deploy-status">
+  </a>
 </p>
 
 Wrote some learning Swift, iOS and the other technology notes.
