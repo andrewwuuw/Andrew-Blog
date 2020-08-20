@@ -1,14 +1,14 @@
 ---
-title: "Learning Swift - Basic Types"
+title: "Swift 從零開始 - Basic Types"
 date: 2020-08-16
 tags:
     - iOS
     - Swift
-    - Swift-book
-summary: Swift 基本型別
+    - Swift 從零開始
+summary: 帶你一起來看不能不知道的 Swift 基本型別
 ---
 
-![Swift Basic Types](@assets/20200816/banner.jpg "Swift Basic Types")
+![Swift Basic Types](@assets/20200816/banner.jpg)
 
 # 基本型別
 
@@ -100,7 +100,7 @@ extension SignedInteger where Self : FixedWidthInteger {
 
 顧名思義，兩個的差異就差在精確度， Float 可表示 6 位數，但是 Double 至少可以表示 15 位數。
 
-還記得[基本型別](https://andrewwuu.com/article/2020/08/16/basic-types/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
+還記得[基本型別](https://andrewwuu.com/tw/2020/08/16/basic-types/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
 
 ```swift
 let bmi = 23.79 // Type is Double.
@@ -141,7 +141,7 @@ let pi = Double(three) + pointOneFourOneFiveNine
 
 但是在浮點數那個段落裡，為什麼可以不用轉換型別就可以將 3 跟 0.14159 相加？
 
-![Swift conversion](@assets/20200816/monkey-shock.gif "Swift conversion")
+![Swift conversion](@assets/20200816/monkey-shock.gif)
 
 因為數字變數或常數的運算與數字文字的運算規則不同，因為數字文字本身沒有明顯標註型別，只有在編譯的時候才會透過型別推論推斷出它的型別，因此已經宣告的變數或常數必須得透過型別轉換才能執行運算。
 

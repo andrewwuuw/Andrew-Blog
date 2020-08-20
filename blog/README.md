@@ -1,14 +1,19 @@
 ---
-title: About
+title: About Me
 ---
 <template>
-  <h1 class="beginning"> 我是 Andrew。 </h1>
+  <h1 class="beginning"> This is Andrew </h1>
 
-  <p/>正在學習 Swift，這裡會放一些學習 Swift 以及開發 iOS 的筆記。
-  <p/>請不吝嗇，歡迎在文章底下留言給予指教。
+  Currently, I worked for KKStream as an engineer.
+  
+  I was born on June 19, 1997 in Ilan, graduated from NTUB.
+  
+  I'll try to Write some notes about learning Swift, iOS and the other technology, feel free to give your comments, Your comments and suggestions are welcome!
+
+  At your convenience, there is [Andrew Blog GitHub](https://github.com/andrewwuuw/Andrew-Blog), send the [Issues](https://github.com/andrewwuuw/Andrew-Blog/issues) to discuss together.
 
   <div class="start">
-    <router-link to="/article/">看文章去～</router-link>
+    <router-link to="/tw/">GO</router-link>
   </div>
 </template>
 
@@ -20,7 +25,7 @@ title: About
     font-size 1.2rem
     border 1px solid
     padding 0.8rem 1.6rem
-    border-radius 4px
+    border-radius 10px
     transition 0.1s ease
     box-sizing border-box
   @media (max-width: $MQMobile)

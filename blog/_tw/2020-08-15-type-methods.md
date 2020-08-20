@@ -4,9 +4,7 @@ date: 2020-08-07
 tags:
     - iOS
     - Swift
-summary: 快速了解 Static function, Class Function 以及 Global Function。
-prev: true
-next: true
+summary: 快速了解 Static function, Class Function 以及 Global Function
 ---
 
 ## 型別方法 ( Type Method )
