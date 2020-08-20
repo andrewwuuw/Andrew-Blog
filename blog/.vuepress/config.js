@@ -1,5 +1,4 @@
 const path = require("path");
-require('dotenv').config();
 
 module.exports = {
   title: "Andrew's Blog",
@@ -23,7 +22,6 @@ module.exports = {
         description: $page => $page.frontmatter.description,
         author: (_, $site) => $site.themeConfig.author,
         tags: $page => $page.frontmatter.tags,
-        type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
         url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
         image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
         publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
@@ -37,27 +35,21 @@ module.exports = {
 
     directories: [
       {
-        id: "article",
-        dirname: "_article",
-        path: "/article/",
-        itemPermalink: "/article/:year/:month/:day/:slug",
+        id: "tw",
+        dirname: "_tw",
+        title: "文章",
+        path: "/tw/",
+        itemPermalink: "/tw/:year/:month/:day/:slug",
       }
     ],
 
-    sidebar: [
-      '/',
-      '/article'
-    ],
-    
-    displayAllHeaders: true,
-
     nav: [
       {
-        text: 'Article',
-        link: '/article/',
+        text: '文章',
+        link: '/tw/',
       },
       {
-        text: 'Tags',
+        text: '標籤',
         link: '/tag/',
       },
     ],
@@ -76,7 +68,7 @@ module.exports = {
       copyright: [
         {
           text: "Andrew Wu © 2020",
-          link: ""
+          link: "/"
         }
       ]
     },

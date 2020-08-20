@@ -1,20 +1,20 @@
 ---
-title: "Learning Swift - Optionals"
+title: "Swift 從零開始 - Optionals"
 date: 2020-08-16
 tags:
     - iOS
     - Swift
-    - Swift-book
-summary: Swift Optionals。
+    - Swift 從零開始
+summary: 對於 Swift Optional 總是一知半解，其實 optional 是 Swift 強大的核心功能之一
 ---
 
-![Learning Swift - Optionals](@assets/20200816/banner2.jpg "Learning Swift - Optionals")
+![Learning Swift - Optionals](@assets/20200816/banner2.jpg)
 
 # Optionals
 
 ---
 
-在[基礎篇](https://andrewwuu.com/article/2020/08/10/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
+在[基礎篇](https://andrewwuu.com/tw/2020/08/10/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
 
 先來看一個字串轉整數的例子：
 
