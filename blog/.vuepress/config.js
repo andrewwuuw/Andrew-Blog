@@ -1,4 +1,6 @@
 const path = require("path");
+require('dotenv').config();
+
 module.exports = {
   title: "Andrew's Blog",
   
@@ -10,7 +12,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': 'UA-175488874-1'
+        'ga': process.env.GA
       }
     ],
     [
