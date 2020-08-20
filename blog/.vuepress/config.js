@@ -96,16 +96,6 @@ module.exports = {
 
     feed: {
       canonical_base: 'https://andrewwuu.com/',
-      posts_directories: ['/_article/'],
-      atom1: {
-        enable    : true,
-        file_name : 'feed.atom',
-        head_link : {
-          enable: true,
-          type  : 'application/atom+xml',
-          title : '%%site_title%% Atom Feed',
-        }
-      },  
     },
 
     paginationComponent: 'SimplePagination',
