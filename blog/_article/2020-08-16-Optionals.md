@@ -14,7 +14,7 @@ summary: Swift Optionals。
 
 ---
 
-在[基礎篇](https://andrewwuu.com/article/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
+在[基礎篇](https://andrewwuu.com/article/2020/08/10/the-basics/)有稍微提到，Optionals 是 Swift 一個特別的型別，它允許變數或是常數可以沒有任何值，沒有值並不是**數字零**或是**空字串**，它則是一個 nil 值。
 
 先來看一個字串轉整數的例子：
 

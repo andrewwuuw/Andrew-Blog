@@ -12,7 +12,7 @@ summary: Swift assertions, preconditions and fatalError。
 
 ## Assertions and Preconditions
 
-這是延續 [Swift 基礎篇](https://andrewwuu.com/article/the-basics/) 的小小番外篇，今晚，我想來點 **Assertions and Preconditions**。
+這是延續 [Swift 基礎篇](https://andrewwuu.com/article/2020/08/10/the-basics/) 的小小番外篇，今晚，我想來點 **Assertions and Preconditions**。
 
 針對程式碼，我們很常使用到判斷式去決定要做什麼事情，有的時候也會期待一個變數或常數經過透過某個 Function 或是處理之後，應該要符合某種條件。
 
@@ -67,7 +67,7 @@ assert(國文分數 > 0, "分數不可以為負數！")
 
 ### Preconditions
 
-在 [Optionals 這篇文章](https://andrewwuu.com/article/optionals/#optionals)開頭有提到，字串轉整數的初始化方法，可以到 [Swift GitHub](https://github.com/apple/swift/blob/da61cc8cdf7aa2bfb3ab03200c52c4d371dc6751/stdlib/public/core/IntegerParsing.swift) ( **swift/stdlib/public/core/IntegerParsing.swift** ) 上看到這個初始化方法的原始碼，在 152 行可以發現，也有用到 `precondition`來去做 radix 的判斷。
+在 [Optionals 這篇文章](https://andrewwuu.com/article/2020/08/16/optionals/#optionals)開頭有提到，字串轉整數的初始化方法，可以到 [Swift GitHub](https://github.com/apple/swift/blob/da61cc8cdf7aa2bfb3ab03200c52c4d371dc6751/stdlib/public/core/IntegerParsing.swift) ( **swift/stdlib/public/core/IntegerParsing.swift** ) 上看到這個初始化方法的原始碼，在 152 行可以發現，也有用到 `precondition`來去做 radix 的判斷。
 
 preconditions 其實跟 assertions 很像，連 API 都長得 87% 像，都是用來判斷條件。
 

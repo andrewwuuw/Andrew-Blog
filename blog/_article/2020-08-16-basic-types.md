@@ -100,7 +100,7 @@ extension SignedInteger where Self : FixedWidthInteger {
 
 顧名思義，兩個的差異就差在精確度， Float 可表示 6 位數，但是 Double 至少可以表示 15 位數。
 
-還記得[基本型別](https://andrewwuu.com/article/the-basics/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
+還記得[基本型別](https://andrewwuu.com/article/2020/08/16/basic-types/)提到的型別推斷嗎？在宣告浮點數時，如果不特別標記型別的話，會自動判斷為 Double。
 
 ```swift
 let bmi = 23.79 // Type is Double.
