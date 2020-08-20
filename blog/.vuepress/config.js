@@ -1,27 +1,4 @@
 const path = require("path");
-const feed_options = {
-  canonical_base: 'https://andrewwuu.com',
-  feeds: {
-
-    rss2: {
-      enable    : false,
-    },
-
-    // -------------------------------------------------------------------------
-
-    atom1: {
-      enable    : true,
-      file_name : 'feed.atom',
-      head_link : {
-        enable: true,
-        type  : 'application/atom+xml',
-        title : '%%site_title%% Atom Feed',
-      }
-    },
-
-  },
-};
-
 module.exports = {
   title: "Andrew's Blog",
   
@@ -50,9 +27,6 @@ module.exports = {
         publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
       }
-    ],
-    [
-      'feed', feed_options
     ]
   ],
   
@@ -116,6 +90,20 @@ module.exports = {
     comment: {
       service: 'disqus',
       shortname: 'andrewwuuw-blog',
+    },
+
+    feed: {
+      canonical_base: 'https://andrewwuu.com/',
+      posts_directories: ['/_article/'],
+      atom1: {
+        enable    : true,
+        file_name : 'feed.atom',
+        head_link : {
+          enable: true,
+          type  : 'application/atom+xml',
+          title : '%%site_title%% Atom Feed',
+        }
+      },  
     },
 
     paginationComponent: 'SimplePagination',
