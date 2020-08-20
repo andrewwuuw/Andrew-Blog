@@ -176,3 +176,8 @@ var 勁辣雞腿堡: String! = nil
 print("今晚，我想來點" + 勁辣雞腿堡)
 // Warning: Fatal error: Unexpectedly found nil while unwrapping an Optional value
 ```
+
+---
+
+- 上一篇: <router-link to="/tw/2020/08/16/basic-types/">Swift 從零開始 - Basic Types</router-link>
+- 下一篇: <router-link to="/tw/2020/08/18/assertions-and-preconditions/">Swift 從零開始 - Assertions and Preconditions</router-link>

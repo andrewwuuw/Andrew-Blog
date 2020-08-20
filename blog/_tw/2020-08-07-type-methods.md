@@ -75,3 +75,7 @@ class 貝拉・雷斯壯: 食死人 {
 ```
 
 但是方法一樣只屬於類別本身，不允許實體調用。
+
+---
+
+- 下一篇: <router-link to="/tw/2020/08/10/the-basics/">Swift 從零開始 - The Basics</router-link>

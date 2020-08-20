@@ -107,3 +107,7 @@ public func precondition(_ condition: @autoclosure () -> Bool,
 ```
 在還沒開發完成的地方加上 fatalError("Unimplemented")，在編譯的時候，跳出錯誤訊息，告訴開發人員還有地方沒有完成。
 ```
+
+---
+
+- 上一篇: <router-link to="/tw/2020/08/16/optionals/">Swift 從零開始 - Optionals</router-link>

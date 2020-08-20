@@ -146,3 +146,8 @@ Swift 分號還有一個特點，如果想在同一行編寫多個單獨的程�
 ```swift
 let message = "我就是想加分號"; print(message)
 ```
+
+---
+
+- 上一篇: <router-link to="/tw/2020/08/07/type-methods/">型別方法</router-link>
+- 下一篇: <router-link to="/tw/2020/08/16/basic-types/">Swift 從零開始 - Basic Types</router-link>

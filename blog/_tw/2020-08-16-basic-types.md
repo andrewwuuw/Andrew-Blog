@@ -221,3 +221,8 @@ let http404Error = (statusCode: 404, statusMessage: "Not Found")
 print("The status code is \(http404Status.statusCode)")
 print("The status message is \(http404Status.statusMessage)")
 ```
+
+---
+
+- 上一篇: <router-link to="/tw/2020/08/10/the-basics/">Swift 從零開始 - The Basics</router-link>
+- 下一篇: <router-link to="/tw/2020/08/16/optionals/">Swift 從零開始 - Optionals</router-link>
