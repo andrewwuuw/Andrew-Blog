@@ -1,14 +1,14 @@
 ---
-title: "Learning Swift - The Basics"
+title: "Swift 從零開始 - The Basics"
 date: 2020-08-10
 tags:
     - iOS
     - Swift
-    - Swift-book
-summary: Swift 基礎篇
+    - Swift 從零開始
+summary: 到底什麼是 Swift 語言，他又是幹嘛的呢？
 ---
 
-![Swift basic](@assets/20200815/banner.jpg "Swift basic")
+![Swift basic](@assets/20200815/banner.jpg)
 
 # 基礎
 
