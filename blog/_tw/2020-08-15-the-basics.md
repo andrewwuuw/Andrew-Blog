@@ -1,10 +1,10 @@
 ---
-title: "Swift 從零開始 - The Basics"
+title: "[一起來看 Swift 官方文件] - The Basics"
 date: 2020-08-10
 tags:
     - iOS
     - Swift
-    - Swift 從零開始
+    - 一起來看 Swift 官方文件
 summary: 到底什麼是 Swift 語言，他又是幹嘛的呢？
 ---
 
@@ -150,4 +150,4 @@ let message = "我就是想加分號"; print(message)
 ---
 
 - 上一篇: <router-link to="/tw/2020/08/07/type-methods/">型別方法</router-link>
-- 下一篇: <router-link to="/tw/2020/08/16/basic-types/">Swift 從零開始 - Basic Types</router-link>
+- 下一篇: <router-link to="/tw/2020/08/16/basic-types/">[一起來看 Swift 官方文件] - Basic Types</router-link>

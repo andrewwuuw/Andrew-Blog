@@ -1,10 +1,10 @@
 ---
-title: "Swift 從零開始 - Optionals"
+title: "[一起來看 Swift 官方文件] - Optionals"
 date: 2020-08-16
 tags:
     - iOS
     - Swift
-    - Swift 從零開始
+    - 一起來看 Swift 官方文件
 summary: 對於 Swift Optional 總是一知半解，其實 optional 是 Swift 強大的核心功能之一
 ---
 
@@ -179,5 +179,5 @@ print("今晚，我想來點" + 勁辣雞腿堡)
 
 ---
 
-- 上一篇: <router-link to="/tw/2020/08/16/basic-types/">Swift 從零開始 - Basic Types</router-link>
-- 下一篇: <router-link to="/tw/2020/08/18/assertions-and-preconditions/">Swift 從零開始 - Assertions and Preconditions</router-link>
+- 上一篇: <router-link to="/tw/2020/08/16/basic-types/">[一起來看 Swift 官方文件] - Basic Types</router-link>
+- 下一篇: <router-link to="/tw/2020/08/18/assertions-and-preconditions/">[一起來看 Swift 官方文件] - Assertions and Preconditions</router-link>

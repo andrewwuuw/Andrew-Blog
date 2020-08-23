@@ -1,10 +1,10 @@
 ---
-title: "Swift 從零開始 - Assertions and Preconditions"
+title: "[一起來看 Swift 官方文件] - Assertions and Preconditions"
 date: 2020-08-18
 tags:
     - iOS
     - Swift
-    - Swift 從零開始
+    - 一起來看 Swift 官方文件
 summary: 什麼時候該用 assertions、preconditions 還有 fatalError 呢？
 ---
 
@@ -110,4 +110,5 @@ public func precondition(_ condition: @autoclosure () -> Bool,
 
 ---
 
-- 上一篇: <router-link to="/tw/2020/08/16/optionals/">Swift 從零開始 - Optionals</router-link>
+- 上一篇: <router-link to="/tw/2020/08/16/optionals/">[一起來看 Swift 官方文件] - Optionals</router-link>
+- 下一篇: <router-link to="/tw/2020/08/22/strings-and-characters/">[一起來看 Swift 官方文件] - 字串和字元</router-link>

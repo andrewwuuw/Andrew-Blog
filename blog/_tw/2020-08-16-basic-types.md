@@ -1,10 +1,10 @@
 ---
-title: "Swift 從零開始 - Basic Types"
+title: "[一起來看 Swift 官方文件] - Basic Types"
 date: 2020-08-16
 tags:
     - iOS
     - Swift
-    - Swift 從零開始
+    - 一起來看 Swift 官方文件
 summary: 帶你一起來看不能不知道的 Swift 基本型別
 ---
 
@@ -224,5 +224,5 @@ print("The status message is \(http404Status.statusMessage)")
 
 ---
 
-- 上一篇: <router-link to="/tw/2020/08/10/the-basics/">Swift 從零開始 - The Basics</router-link>
-- 下一篇: <router-link to="/tw/2020/08/16/optionals/">Swift 從零開始 - Optionals</router-link>
+- 上一篇: <router-link to="/tw/2020/08/10/the-basics/">[一起來看 Swift 官方文件] - The Basics</router-link>
+- 下一篇: <router-link to="/tw/2020/08/16/optionals/">[一起來看 Swift 官方文件] - Optionals</router-link>
