@@ -8,7 +8,7 @@
   </a>
 </p>
 
-This is [Andrew's Blog](andrewwuu.com/), wrote some learning Swift, iOS and the other technology notes.
+This is [Andrew's Blog](https://andrewwuu.com/), wrote some learning Swift, iOS and the other technology notes.
 
 Feel free to give your comments, Your comments and suggestions are welcome!
 
