@@ -1,6 +1,6 @@
 ---
 title: "[一起來看 Swift 官方文件] - Assertions and Preconditions"
-date: 2020-08-18
+date: 2020-08-18 20:00
 tags:
     - iOS
     - Swift
@@ -111,4 +111,4 @@ public func precondition(_ condition: @autoclosure () -> Bool,
 ---
 
 - 上一篇: <router-link to="/tw/2020/08/16/optionals/">[一起來看 Swift 官方文件] - Optionals</router-link>
-- 下一篇: <router-link to="/tw/2020/08/22/strings-and-characters/">[一起來看 Swift 官方文件] - 字串和字元</router-link>
+- 下一篇: <router-link to="/tw/2020/08/22/strings-and-characters/">[一起來看 Swift 官方文件] - Strings and Characters</router-link>

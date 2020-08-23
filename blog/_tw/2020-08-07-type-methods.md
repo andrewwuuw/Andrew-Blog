@@ -1,6 +1,6 @@
 ---
 title: Type Methods
-date: 2020-08-07
+date: 2020-08-07 21:00
 tags:
     - iOS
     - Swift
@@ -78,4 +78,4 @@ class 貝拉・雷斯壯: 食死人 {
 
 ---
 
-- 下一篇: <router-link to="/tw/2020/08/10/the-basics/">Swift 從零開始 - The Basics</router-link>
+- 下一篇: <router-link to="/tw/2020/08/10/the-basics/">[一起來看 Swift 官方文件] - The Basics</router-link>
