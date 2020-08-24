@@ -3,8 +3,6 @@ title: About Me
 ---
 <template>
   <h1 class="beginning"> This is Andrew </h1>
-
-  Currently, I worked for KKStream as an engineer.
   
   I was born on June 19, 1997 in Ilan, graduated from NTUB.
   
