@@ -381,3 +381,4 @@ let subString = message[message.index(message.startIndex, offsetBy: 2)..<message
 ---
 
 - 上一篇: <router-link to="/tw/2020/08/18/assertions-and-preconditions/">[一起來看 Swift 官方文件] - Assertions and Preconditions</router-link>
+- 下一篇: <router-link to="/tw/2020/08/24/basic-operators/">[一起來看 Swift 官方文件] - Basic Operators</router-link>
